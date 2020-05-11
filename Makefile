@@ -45,7 +45,9 @@ LDFLAGS                =
 
 # The directories in which source files reside.
 # If not specified, all subdirectories of the current directory will be added recursively.
-SRCDIRS               := src/
+SRCDIRS               := src
+
+NODEP = 1
 
 # OS specific.
 EXTRA_CFLAGS_MACOS     =
