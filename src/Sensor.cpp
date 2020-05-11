@@ -9,10 +9,8 @@
 
 Sensor::Sensor(std::string name) {
 	this->name = name;
-
 }
 
 Sensor::~Sensor() {
 	// TODO Auto-generated destructor stub
 }
-

@@ -25,6 +25,5 @@ Component::~Component() {
 
 void Component::addSensor(Sensor* sensor){
 	this->sensors.push_back(sensor);
-	cout << "Component " << this->name << " received new sensor " << sensor->name << endl;
 }
 

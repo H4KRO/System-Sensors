@@ -10,9 +10,14 @@
 
 #include <string>
 
+#include "Value.h"
+
+using namespace std;
+
 class Sensor {
 public:
-	std::string name;
+	string name;
+	Value* value;
 	Sensor(std::string name);
 	virtual ~Sensor();
 };

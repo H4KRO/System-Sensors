@@ -6,11 +6,16 @@
 // Description : Hello World in C++, Ansi-style
 //============================================================================
 
-#include "TestComponent.h"
-#include "TestSensor.h"
+#include <iostream>
+#include <vector>
+
+#include "Component.h"
+#include "CPUComponent.h"
 
 using namespace std;
 
 int main() {
-	TestComponent* testComponent = new TestComponent();
+	vector<Component> components;
+	CPUComponent* cpuComponent = new CPUComponent();
+	cout << cpuComponent->sensors.at(0)->value->getString() << endl;
 }
