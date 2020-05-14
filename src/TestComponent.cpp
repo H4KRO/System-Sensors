@@ -1,21 +1,16 @@
 /*
  * TestComponent.cpp
  *
- *  Created on: 7 mai 2020
+ *  Created on: 14 mai 2020
  *      Author: Eddie
  */
 
-#include <iostream>
-
-#include "TestSensor.h"
 #include "TestComponent.h"
+#include "TestSensor.h"
 
-using namespace std;
+TestComponent::TestComponent() : Component("Test Component") {
+	this->addSensor(new TestSensor());
 
-TestComponent::TestComponent() : Component("TestComponent") {
-	cout << "New component " << this->name << endl;
-	TestSensor* testSensor = new TestSensor();
-	this->addSensor(testSensor);
 }
 
 TestComponent::~TestComponent() {

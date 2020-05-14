@@ -1,12 +1,12 @@
 /*
  * TestSensor.h
  *
- *  Created on: 7 mai 2020
+ *  Created on: 14 mai 2020
  *      Author: Eddie
  */
 
-#ifndef TESTSENSOR_H_
-#define TESTSENSOR_H_
+#ifndef SRC_TESTSENSOR_H_
+#define SRC_TESTSENSOR_H_
 
 #include "Sensor.h"
 
@@ -14,6 +14,8 @@ class TestSensor: public Sensor {
 public:
 	TestSensor();
 	virtual ~TestSensor();
+	void compute();
+	float value;
 };
 
-#endif /* TESTSENSOR_H_ */
+#endif /* SRC_TESTSENSOR_H_ */

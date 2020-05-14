@@ -17,9 +17,13 @@ using namespace std;
 class Sensor {
 public:
 	string name;
-	Value* value;
 	Sensor(std::string name);
 	virtual ~Sensor();
+	virtual void compute() = 0;
+	vector<Value*> getValues();
+protected:
+	vector<Value*> values;
+	void addValue(Value*);
 };
 
 #endif /* SENSOR_H_ */

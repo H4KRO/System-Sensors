@@ -17,11 +17,19 @@ using namespace std;
 
 class Component {
 public:
-	string name;
-	vector<Sensor*> sensors;
 	Component(std::string name);
 	virtual ~Component();
+	string getName();
+	vector<Sensor*> getSensors();
 	void addSensor(Sensor* sensor);
+	void compute();
+	vector<Value*> getValues();
+	string getStringReport();
+protected:
+	string name;
+	vector<Sensor*> sensors;
+private:
+
 };
 
 #endif /* COMPONENT_H_ */

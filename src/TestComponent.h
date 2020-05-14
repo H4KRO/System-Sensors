@@ -1,19 +1,19 @@
 /*
  * TestComponent.h
  *
- *  Created on: 7 mai 2020
+ *  Created on: 14 mai 2020
  *      Author: Eddie
  */
 
-#ifndef TESTCOMPONENT_H_
-#define TESTCOMPONENT_H_
+#ifndef SRC_TESTCOMPONENT_H_
+#define SRC_TESTCOMPONENT_H_
 
 #include "Component.h"
 
-class TestComponent : public Component {
+class TestComponent: public Component {
 public:
 	TestComponent();
 	virtual ~TestComponent();
 };
 
-#endif /* TESTCOMPONENT_H_ */
+#endif /* SRC_TESTCOMPONENT_H_ */

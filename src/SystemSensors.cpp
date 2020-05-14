@@ -9,13 +9,22 @@
 #include <iostream>
 #include <vector>
 
-#include "Component.h"
-#include "CPUComponent.h"
+#include "TestComponent.h"
 
 using namespace std;
 
 int main() {
-	vector<Component> components;
-	CPUComponent* cpuComponent = new CPUComponent();
-	cout << cpuComponent->sensors.at(0)->value->getString() << endl;
+	TestComponent* testComponent = new TestComponent();
+	cout << testComponent->getStringReport() << endl;
+	testComponent->compute();
+	cout << testComponent->getStringReport() << endl;
+	cout << testComponent->getStringReport() << endl;
+	testComponent->compute();
+	cout << testComponent->getStringReport() << endl;
+	cout << testComponent->getStringReport() << endl;
+	testComponent->compute();
+	cout << testComponent->getStringReport() << endl;
+	cout << testComponent->getStringReport() << endl;
+	testComponent->compute();
+	cout << testComponent->getStringReport() << endl;
 }
