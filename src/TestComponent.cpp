@@ -1,7 +1,7 @@
 /*
  * TestComponent.cpp
  *
- *  Created on: 14 mai 2020
+ *  Created on: 15 mai 2020
  *      Author: Eddie
  */
 
@@ -9,7 +9,8 @@
 #include "TestSensor.h"
 
 TestComponent::TestComponent() : Component("Test Component") {
-	this->addSensor(new TestSensor());
+	TestSensor* ts = new TestSensor();
+	this->addSensor(ts);
 
 }
 

@@ -8,23 +8,16 @@
 
 #include <iostream>
 #include <vector>
+#include <string>
 
 #include "TestComponent.h"
 
 using namespace std;
 
 int main() {
-	TestComponent* testComponent = new TestComponent();
-	cout << testComponent->getStringReport() << endl;
-	testComponent->compute();
-	cout << testComponent->getStringReport() << endl;
-	cout << testComponent->getStringReport() << endl;
-	testComponent->compute();
-	cout << testComponent->getStringReport() << endl;
-	cout << testComponent->getStringReport() << endl;
-	testComponent->compute();
-	cout << testComponent->getStringReport() << endl;
-	cout << testComponent->getStringReport() << endl;
-	testComponent->compute();
-	cout << testComponent->getStringReport() << endl;
+	TestComponent* tc = new TestComponent();
+	for(int i = 0; i < 10; i++){
+		tc->compute();
+		cout << tc->getSensors().at(0)->getStringReport() << endl;
+	}
 }

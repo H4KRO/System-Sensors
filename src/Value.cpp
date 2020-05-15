@@ -27,5 +27,9 @@ string Value::getString(){
 	return this->label + " " + this->getStringData() +  " " + this->unit;
 }
 
+string Value::getLabel(){
+	return this->label;
+}
+
 
 

@@ -10,20 +10,17 @@
 
 #include <string>
 
+#include "ValuesContainer.h"
 #include "Value.h"
 
 using namespace std;
 
-class Sensor {
+class Sensor : public ValuesContainer {
 public:
 	string name;
 	Sensor(std::string name);
 	virtual ~Sensor();
 	virtual void compute() = 0;
-	vector<Value*> getValues();
-protected:
-	vector<Value*> values;
-	void addValue(Value*);
 };
 
 #endif /* SENSOR_H_ */

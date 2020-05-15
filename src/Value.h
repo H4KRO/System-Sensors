@@ -17,6 +17,7 @@ public:
 	Value(string label, string unit);
 	virtual ~Value();
 	string getString();
+	string getLabel();
 	void setData(void* data);
 protected:
 	virtual string getStringData() = 0;

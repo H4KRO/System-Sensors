@@ -11,11 +11,12 @@
 #include <string>
 #include <vector>
 
+#include "ValuesContainer.h"
 #include "Sensor.h"
 
 using namespace std;
 
-class Component {
+class Component : public ValuesContainer {
 public:
 	Component(std::string name);
 	virtual ~Component();
@@ -23,8 +24,6 @@ public:
 	vector<Sensor*> getSensors();
 	void addSensor(Sensor* sensor);
 	void compute();
-	vector<Value*> getValues();
-	string getStringReport();
 protected:
 	string name;
 	vector<Sensor*> sensors;

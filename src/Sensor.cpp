@@ -16,11 +16,3 @@ Sensor::Sensor(std::string name) {
 Sensor::~Sensor() {
 	// TODO Auto-generated destructor stub
 }
-
-vector<Value*> Sensor::getValues(){ // @suppress("Ambiguous problem")
-	return this->values;
-}
-
-void Sensor::addValue(Value* value){
-	this->values.push_back(value);
-}

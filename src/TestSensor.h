@@ -1,7 +1,7 @@
 /*
  * TestSensor.h
  *
- *  Created on: 14 mai 2020
+ *  Created on: 15 mai 2020
  *      Author: Eddie
  */
 
@@ -15,7 +15,7 @@ public:
 	TestSensor();
 	virtual ~TestSensor();
 	void compute();
-	float value;
+	float v;
 };
 
 #endif /* SRC_TESTSENSOR_H_ */
